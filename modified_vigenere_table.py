@@ -23,7 +23,7 @@
 def vigenere_table()->List[List]:
     rows = cols = 27
     grid = [[0 for _ in range(cols)] for _ in range(rows)]
-    grid[0][0] = 0
+    grid[0][0] = '0'
     for j in range(1, 27):
         grid[0][j] = chr(96+j)
         grid[j][0] = chr(96+j)
